@@ -1,0 +1,147 @@
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* App container */
+.todo-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.todo-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.2s;
+}
+
+form input:focus {
+  border: 1px solid #6c63ff;
+}
+
+form button {
+  padding: 10px 15px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+
+form button:hover {
+  background: #574fd6;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+/* Task text */
+li span {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Completed task */
+li span[style*="line-through"] {
+  color: gray;
+  font-style: italic;
+}
+
+/* Buttons */
+li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+li button:first-of-type {
+  background: #4caf50;
+  color: white;
+}
+
+li button:first-of-type:hover {
+  background: #388e3c;
+}
+
+li button:last-of-type {
+  background: #f44336;
+  color: white;
+}
+
+li button:last-of-type:hover {
+  background: #d32f2f;
+}
+
+/* Footer buttons */
+.todo-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.todo-footer button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.todo-footer button:hover {
+  background: #574fd6;
+}
