@@ -145,3 +145,36 @@ li button:last-of-type:hover {
 .todo-footer button:hover {
   background: #574fd6;
 }
+
+
+@media (max-width: 500px) {
+  .todo-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  form input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  form button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  li span {
+    font-size: 14px;
+  }
+
+  li button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .todo-footer button {
+    padding: 8px;
+    font-size: 14px;
+    margin: 0 3px;
+  }
+}
